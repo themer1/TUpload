@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TransactionsDBModel1StoreContainer" CdmEntityContainer="TransactionsDBEntities1">
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="TransactionsDBModel1.Transaction">
+        <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ValidCurrencies">
+      <EntityTypeMapping TypeName="TransactionsDBModel1.ValidCurrency">
+        <MappingFragment StoreEntitySet="ValidCurrencies">
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
